@@ -15,12 +15,12 @@
 	}
 
 //ioc(di):
-@Service
-@Transactional
-public class UserServiceImpl implements UserService {
+	@Service
+	@Transactional
+	public class UserServiceImpl implements UserService {
 
-	private static final Log log = LogFactory.getLog(UserServiceImpl.class);
+		private static final Log log = LogFactory.getLog(UserServiceImpl.class);
 
-	@@Autowired
-	UserDao userDao;
-}
+		@@Autowired
+		UserDao userDao;
+	}
