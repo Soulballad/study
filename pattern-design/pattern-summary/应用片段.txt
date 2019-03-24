@@ -1,0 +1,26 @@
+//aop:
+	package com.ctj.aspect;
+	import org.aspectj.lang.annotation.Aspect;
+	import org.aspectj.lang.annotation.Before;
+	import org.aspectj.lang.annotation.Pointcut;
+
+	@Aspect
+	public class LogAspect {
+	    @Pointcut("execution(* com.ctj.service.*.*(..))")
+	    public void pointcutName(){}
+	    @Before("pointcutName()")
+	    public void performance(){
+	        System.out.println("Spring AOP");
+	    }
+	}
+
+//ioc(di):
+@Service
+@Transactional
+public class UserServiceImpl implements UserService {
+
+	private static final Log log = LogFactory.getLog(UserServiceImpl.class);
+
+	@@Autowired
+	UserDao userDao;
+}
