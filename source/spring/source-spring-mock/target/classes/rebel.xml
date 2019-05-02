@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="E:/Develop/Record/IdeaWork/gupao/gupao-root/gupao-source/source-spring-mock/target/source-spring-mock/WEB-INF/classes">
+			<include name="applicationContext.properties"/>
+			<include name="layouts/404.html"/>
+			<include name="layouts/500.html"/>
+			<include name="layouts/first.html"/>
+			<include name="webdefault.xml"/>
+		</dir>
+		<dir name="E:/Develop/Record/IdeaWork/gupao/gupao-root/gupao-source/source-spring-mock/target/source-spring-mock/WEB-INF/classes">
+			<include name="applicationContext.properties"/>
+			<include name="layouts/404.html"/>
+			<include name="layouts/500.html"/>
+			<include name="layouts/first.html"/>
+			<include name="webdefault.xml"/>
+		</dir>
+		<dir name="E:/Develop/Record/IdeaWork/gupao/gupao-root/gupao-source/source-spring-mock/src/main/resources">
+			<include name="**/*"/>
+		</dir>
+		<dir name="E:/Develop/Record/IdeaWork/gupao/gupao-root/gupao-source/source-spring-mock/src/main/java">
+			<exclude name="**/*.java"/>
+			<exclude name="**/*.class"/>
+		</dir>
+		<dir name="E:/Develop/Record/IdeaWork/gupao/gupao-root/gupao-source/source-spring-mock/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir name="E:/Develop/Record/IdeaWork/gupao/gupao-root/gupao-source/source-spring-mock/src/main/webapp">
+			</dir>
+		</link>
+	</web>
+
+</application>
